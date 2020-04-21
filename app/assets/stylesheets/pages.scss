@@ -15,49 +15,58 @@ html {
 	background-position: center;
 	background-position-y: inherit;
 	background-image: url('https://res.cloudinary.com/dovu27lye/image/upload/v1587479037/suna/suna_biking_i56yfu.jpg'); 
-	.header {
-		display: flex;
-		padding: 1rem;
-		font-size: 18px;
-		min-height: 80px;
-		.menu {
-			display: flex;
-			margin: 0;
-			justify-content: space-around;
-			width: 80%;
-			a {
-				color: white;
-			}
-			a:hover {
-				text-decoration: none;
-				color: grey
-			}
-		}
-		.name {
-			width: 20%
-		}
-	}
-    h1 {
-        cursor: default;
+  .main {
+  	display: flex;
+  	width: 80%;
+    flex-direction: column;
+    padding-top: 18%;
+    .main-text {
+    	text-align: right;
     }
-    .main {
-    	display: flex;
-    	width: 80%;
-	    flex-direction: column;
-	    margin-top: 13%;
-	    .main-text {
-	    	text-align: right;
-	    }
-	    .btn-outline-light {
-	    	border-radius: 0;
-	    	&:hover{
-	    		background: transparent;
-	    		color: grey
-	    	}
-	    }
+    .btn-outline-light {
+    	border-radius: 0;
+    	&:hover{
+    		background: transparent;
+    		color: grey
+    	}
     }
+  }
 }
 
+.page-portfolio {
+  color: white;
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: inherit;
+  background-image: url('https://res.cloudinary.com/dovu27lye/image/upload/v1587484785/suna/paso_robles_vrw4ll.jpg'); 
+}
+
+.header {
+  position: fixed;
+  z-index: 1000;
+  display: flex;
+  padding: 1rem;
+  font-size: 18px;
+  width: 100%;
+  a {
+    color: white;
+  }
+  a:hover {
+    text-decoration: none;
+    color: grey
+  }
+  .menu {
+    display: flex;
+    margin: 0;
+    justify-content: space-around;
+    width: 80%;
+  }
+  .name {
+    width: 20%
+  }
+}
 .footer {
   background: transparent;
   display: flex;
